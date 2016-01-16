@@ -15,7 +15,6 @@ Segue a baixo o link do psd para o teste:
 ## Perguntas: ##
 
 
-<<<<<<< HEAD
 **1. Encontrou alguma dificuldade no layout?**
     
 Apenas algumas duvidas sobre as interações nos elementos na questão se o comportamento dos mesmos estão corretos.

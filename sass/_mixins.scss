@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Communs Mixins
+   ========================================================================== */
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+/* ==========================================================================
+   Form - Placeholder
+   ========================================================================== */
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}
+}

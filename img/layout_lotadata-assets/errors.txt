@@ -1,0 +1,4 @@
+[Sat Jan 16 2016 15:24:52 GMT-0200 (Horário brasileiro de verão)] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Sat Jan 16 2016 15:24:52 GMT-0200 (Horário brasileiro de verão)] layer "+ copy": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Sat Jan 16 2016 15:24:52 GMT-0200 (Horário brasileiro de verão)] layer "+ copy 2": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Sat Jan 16 2016 15:24:52 GMT-0200 (Horário brasileiro de verão)] layer "Copyright 2015. LotaData, Inc. | Contact: Business@LotaData.com": Unsupported extension: com

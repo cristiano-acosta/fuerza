@@ -2,7 +2,9 @@
 
 Segue a baixo o link do psd para o teste:
 
+
 [http://cristiano-acosta.github.io/fuerzastudio_teste/](http://cristiano-acosta.github.io/fuerzastudio_teste/ )
+
 
 
 ## Descrição: ##
@@ -13,6 +15,7 @@ Segue a baixo o link do psd para o teste:
 ## Perguntas: ##
 
 
+<<<<<<< HEAD
 **1. Encontrou alguma dificuldade no layout?**
     
 Apenas algumas duvidas sobre as interações nos elementos na questão se o comportamento dos mesmos estão corretos.

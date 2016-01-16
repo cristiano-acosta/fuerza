@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Icons Fonts .
+   Genered by svg illustrator on http://www.fontello.com/
+   ========================================================================== */
+//fonts
+$icon_font_name: lotadata;
+//urls
+$url_0: url(../fonts/lotadata.eot);
+$url_1: url(../fonts/lotadata.eot#iefix);
+$url_2: url(../fonts/lotadata.woff);
+$url_3: url(../fonts/lotadata.ttf);
+$url_4: url(../fonts/lotadata.svg);
+
+@font-face {
+    font-family: $icon_font_name;
+    src: $url_0;
+    src: $url_1 format("embedded-opentype"), $url_2 format("woff"), $url_3 format("truetype"), $url_4 format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.icon,[class^="icon-"], [class*=" icon-"] {
+    &:before {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        font-family:$icon_font_name;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+.icon-premium-placement:before { content: '\e800'; }
+.icon-sample-api:before { content: '\e801'; }
+.icon-service-providers:before { content: '\e802'; }
+.icon-sample-apps:before { content: '\e803'; }
+.icon-ad-networks:before { content: '\e804'; }
+.icon-app-developers:before { content: '\e805'; }
+.icon-concierge:before { content: '\e806'; }
+.icon-consumer:before { content: '\e807'; }
+.icon-device-oems:before { content: '\e808'; }
+.icon-external-link:before { content: '\e809'; }
+.icon-internet-portals:before { content: '\e80a'; }
+.icon-mobile-operators:before { content: '\e80b'; }

@@ -167,6 +167,12 @@ form {
         float: none;
         position: relative;
     }
+    .label-danger {
+        bottom: 4px;
+        left: 10px;
+        position: absolute;
+        top: auto;
+    }
     button {
         width: 200px;
         height: 50px;
@@ -179,6 +185,9 @@ form {
 }
 .float-right {
     float: right;
+}
+.hidden {
+    display: none;
 }
 .btn {
     background: $dark-pink;
@@ -243,40 +252,27 @@ form {
 .bg-gray {
     background: #e8e8e8;
 }
-.nav {
-
-    background: #676767;
-    margin: 0;
-    padding: 0;
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li {
-            margin: 5px 0;
-            &:first-child {
-                margin: 0;
-                height: 48px;
-                overflow: hidden;
-            }
-            a {
-                display: block;
-                font-weight: lighter;
-                padding: 6px 12px;
-                color: #ffffff;
-                .icon-external-link {
-                    @include opacity(.5);
-                }
-            }
-            &:hover, &:focus, &.active {
-                a {
-                    background: #4e4e4e;
-                }
-            }
-        }
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    @include border-radius(.25em);
+    &:empty {
+        display: none;
     }
-
+    .btn & {
+        position: relative;
+        top: -1px;
+    }
+    &.label-danger {
+        background: #d9534f;
+    }
 }
 /*	--------------------------------------------------
 	Reveal Modals
@@ -342,7 +338,42 @@ form {
     }
 }
 /* Struture */
-/* 0. NavBar */
+/* 0. NavBar and side navigation */
+.nav {
+
+    background: #676767;
+    margin: 0;
+    padding: 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 5px 0;
+            &:first-child {
+                margin: 0;
+                height: 48px;
+                overflow: hidden;
+            }
+            a {
+                display: block;
+                font-weight: lighter;
+                padding: 6px 12px;
+                color: #ffffff;
+                .icon-external-link {
+                    @include opacity(.5);
+                }
+            }
+            &:hover, &:focus, &.active {
+                a {
+                    background: #4e4e4e;
+                }
+            }
+        }
+    }
+
+}
 .navbar {
     background: rgb(103, 103, 103);
     height: 48px;
@@ -369,7 +400,7 @@ form {
                 padding: 15px;
                 &.btn {
                     padding: 8px 20px;
-                    margin-top:9px;
+                    margin-top: 9px;
                 }
                 display: block;
                 color: #ffffff;

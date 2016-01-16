@@ -256,11 +256,11 @@
         <div id="modal-get-in-touch" class="reveal-modal">
             <h2 class="lighter big color-blue">Get in Touch</h2>
             <h3 class="color-dark-pink">What products are you most interested in?</h3>
-            <form class="form-horizontal">
+            <form id="quick-contact" class="form-horizontal">
                 <fieldset>
                     <!-- Multiple Radios -->
                     <div class="form-group">
-                        <label class="control-label" for="radios">Choose as many as you like</label>
+                        <label class="control-label">Choose as many as you like</label>
                         <div class="radios">
                             <label for="radios-0" class="input-control radio">
                                 <input name="radios" id="radios-0" value="Context API" checked="checked" type="radio">
@@ -282,18 +282,23 @@
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <input id="contact_name" name="contact_name" placeholder="What is your name?" class="form-control input-md" required="" type="text">
+                        <label class="hidden" for="name">What is your name?</label>
+                        <input id="name" name="name" placeholder="What is your name?" class="form-control input-md" required="" type="text">
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
+                        <label class="hidden" for="company">What company do you represent?</label>
                         <input id="company" name="company" placeholder="What company do you represent?" class="form-control input-md" required="" type="text">
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <input id="e-mail" name="e-mail" placeholder="What’s your email address?" class="form-control input-md" required="" type="text">
+                        <label class="hidden" for="email">What’s your email address?</label>
+                        <input id="email" name="email" placeholder="What’s your email address?" class="form-control input-md" required="" type="text">
                     </div>
                     <div class="text-right">
                         <button type="submit" id="send" name="send" class="btn ">Send</button>
+                    </div>
+                    <div class="validation-alert">
                     </div>
                 </fieldset>
             </form>
@@ -306,6 +311,8 @@
         <script src="js/plugins.js"></script>
         <script src="js/vendor/sidr/dist/jquery.sidr.min.js"></script>
         <script src="js/vendor/jquery-reveal/jquery.reveal.js"></script>
+        <script src="js/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="js/vendor/jquery-validation/dist/additional-methods.min.js"></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
